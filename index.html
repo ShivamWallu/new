@@ -29,8 +29,6 @@
         <li class="link"><a href="#">About</a></li>
         <li class="link"><a href="#">Community</a></li>
       </ul>
-      <!-- <a href="http://localhost/My_Gym_Website/another.html">Join Now</a> -->
-      <!-- <button id="join" class="btn" onclick="checkAndRedirect()">Join Now</button> -->
       <button id="join" class="btn" onclick="handleButtonClick()">Join Now<span id="namePlaceholder"></span></button>
 
     </nav>
@@ -87,7 +85,6 @@
             Through a combination of workout routines and expert guidance, we'll
             empower you to reach your goals.
           </p>
-          <!-- <a href="http://localhost/My_Gym_Website/another.html">Join Now <i class="ri-arrow-right-line"></i></a> -->
           <button id="Fat_lose" class="btn price__btn" onclick="handleButtonClick()">Join Now</button>
 
         </div>
@@ -98,7 +95,6 @@
             Designed for individuals, our program offers an effective approach
             to gaining weight in a sustainable manner.
           </p>
-          <!-- <a href="http://localhost/My_Gym_Website/another.html">Join Now <i class="ri-arrow-right-line"></i></a> -->
           <button id="Weight_Gain" class="btn price__btn" onclick="handleButtonClick()">Join Now</button>          
         </div>
       </div>
@@ -180,7 +176,6 @@
             </p>
           </div>
           <button id="basic" name="basic" value="basic" class="btn price__btn" onclick="handleButtonClick()">Join Now</button>
-          <!-- <a  id="basicPlan" class="btn price__btn" href="http://localhost/My_Gym_Website/another.html"></a> -->
         </div>
         <div class="price__card">
           <div class="price__card__content">
@@ -199,7 +194,6 @@
               At home workouts
             </p>
           </div>
-          <!-- <a href="http://localhost/My_Gym_Website/another.html">Join Now</a> -->
           <button id="weekly" name="weekly" value="weekly" class="btn price__btn" onclick="handleButtonClick()">Join Now</button>
 
         </div>
@@ -228,7 +222,6 @@
               Personal Training
             </p>
           </div>
-          <!-- <a href="http://localhost/My_Gym_Website/another.html">Join Now</a> -->
           <button id="monthly" name="monthly" value="monthly" class="btn price__btn" onclick="handleButtonClick()">Join Now</button>
         </div>
       </div>
@@ -309,7 +302,6 @@
     <div class="footer__bar">
       Copyright © 2023 Web Design by Shivam Walia. All rights reserved.
     </div>
-    <!-- <script src="script.js"></script> -->
     <script>
 
       const myButton1 = document.getElementById('join');
@@ -393,19 +385,8 @@
           window.location.href = 'Login.html';
         }
       }
-  </script>
 
 
-<script>
-  document.getElementById('contactUsLink').addEventListener('click', function() {
-    window.location.href = 'contact.html';
-  });
-</script>
-
-
-
-
-<script>
   // Function to retrieve stored form data from cookies
 function getStoredFormData() {
   const cookies = document.cookie.split(';').map(cookie => cookie.split('='));
@@ -441,11 +422,7 @@ function initializeJoinButton() {
 
 // Call initializeJoinButton on page load
 initializeJoinButton();
-
-
-
-
-
+// --------------------------------------------------------------------------------------------------------
 
 function startAutoTypingAnimation(elementId, delay = 100, restartDelay = 1000) {
     const textElement = document.getElementById(elementId);
@@ -470,6 +447,11 @@ function startAutoTypingAnimation(elementId, delay = 100, restartDelay = 1000) {
   }
 
   startAutoTypingAnimation("gymTrainerText"); // Start the auto-typing animation
+// --------------------------------------------------------------------------------------------------------
+
+  document.getElementById('contactUsLink').addEventListener('click', function() {
+    window.location.href = 'contact.html';
+  });
 </script>
   </body>
 </html>
